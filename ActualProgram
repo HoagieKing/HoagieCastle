@@ -1,1 +1,15 @@
+package classwork;
+//James Fay
+//Intro to Comp Sci
+//block G
+//Oct 24, 2019
+//
+public class GitHubProgram
+{
 
+	public static void main(String[] args)
+	{
+		System.out.println("This is the thingy for github.");
+	}
+
+}
