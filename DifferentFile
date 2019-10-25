@@ -1,1 +1,70 @@
+package classwork;
+
+import java.util.Scanner;
+
+//James Fay
+//Intro to Comp Sci
+//block G
+//Oct 25, 2019
+//
+public class SandwichSavior
+{
+	Scanner scan = new Scanner(System.in);
+	public String pName, pType, pYN;
+	public static boolean introB = true;
+	public boolean act1=false;
+	public static boolean gameOver=false;
+	public int option;
+	
+	public void gameOverScreen()
+	{
+		//big bloody screen with a randomized NOOOOO or WHYYYYY or bro you suckkk response and a big GAME OVER
+		System.out.println("GAME OVER");
+	}
+	public void intro()
+	{
+		System.out.println("Welcome, brave warrior, to Sandwich Savior! \n What shall the game call you?");
+		pName= scan.nextLine();
+		System.out.println(pName+", the kingdom of SANDWICH is in grave DANGER! \n "
+				+ "The ruler, a brave warrior known as HOAGIE KING, has been SLAIN by the evil LORD OF LUNCH!\n"
+				+ "Under the new rule of the LORD OF LUNCH, the kingdom is falling to ruins, and is being RAVAGED by \n"
+				+ "the EVIL forces of the LORD OF LUNCH. The land of SANDWICH needs a savior, "+pName+",\n"
+						+ "will you help us and defeat the LORD OF LUNCH?");
+		//in the graphics have a blinking Y/N icon
+		System.out.println("Y/N");
+		pYN=scan.nextLine();
+		if(pYN.equalsIgnoreCase("y"))
+		{
+			//fade out of title screen and transition to an ACT ONE kinda screen yknow?
+			act1=true;
+		}
+		else
+		{
+			
+			System.out.println("Well screw you too...");
+			gameOver=true;
+		}
+		introB=false;
+		
+	}
+	public void game()
+	{
+		while(gameOver=false)
+		{
+			while(introB)
+			{
+				intro();
+			}
+			while(act1)
+			{
+				
+			}
+		}
+	}
+	public static void main(String[] args)
+	{
+		
+	}
+
+}
 
