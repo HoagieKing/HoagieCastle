@@ -1,0 +1,21 @@
+public class APDice
+ {
+	private int mySides;
+	
+	//default 
+	public APDice()
+	{
+		mySides = 6;
+	}
+	
+	//different sided dice
+	public APDice(int sides)
+	{
+		mySides = sides;
+	}
+	
+	public int roll()//gives random number
+	{
+		return (int)(Math.random()* mySides) + 1;
+	}
+}
